@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #cccccc;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #030712;
+  color: #cccccc;
+}
+.py {
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.bg-light {
+  background: #191919;
+}
+/* Header Section */
+header{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+background: #030712;
+}
+.header_section {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.header__logo h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #cccccc;
+}
+.header__menu {
+  display: none;
+}
+.header__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+}
+
+.header__left--menuicon {
+  cursor: pointer;
+  font-size: 22px;
+}
+.header__left--menuicon i:hover {
+  color: #01eefe;
+  transition: 0.3s ease;
+}
+
+/* About Section */
+.about__section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+.about__section--text {
+  order: 2;
+}
+.about__section--image {
+  order: 1;
+  margin-bottom: -58px;
+}
+.bg-image {
+  position: relative;
+}
+.profile-photo {
+}
+.about__section--text h1 {
+  padding: 2px 0px;
+  font-weight: 500;
+}
+.about__section--text h3 {
+  font-weight: 500;
+}
+.about__section--text-color {
+  color: #01eefe;
+}
+.about__section--text p {
+  margin-top: 5px;
+}
+.about__section--social-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.about__section--social-link i {
+  margin: 15px 0px;
+  padding: 8px;
+  border: 2px solid #01eefe;
+  font-size: 20px;
+  color: #01eefe;
+  border-radius: 50%;
+}
+.about__section--social-link i:hover {
+  box-shadow: 0px 0px 10px #01eefe;
+}
+.btn {
+  margin: 10px 0px;
+  background: #01eefe;
+  outline: none;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: #191919;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #01eefe;
+}
+.btn a {
+  color: #191919;
+}
+
+/* Experience Section */
+.experience__section {
+  padding: 50px 20px;
+  color: #cccccc;
+}
+.center--heading {
+  text-align: center;
+}
+.center--heading button {
+  background: #1f2937;
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+.experience__section--card {
+  display: flex;
+  flex-direction: column;
+  background: #1f2937;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0px;
+}
+.experience__company--logo img {
+  width: 80px;
+  order: 1;
+}
+.experience__work--details {
+  order: 3;
+}
+.experience__work--details h3 {
+  font-weight: 500;
+}
+.experience__work--details ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.experience__duration {
+  margin: 8px 0px;
+}
+
+/* Skill Section */
+.skill__section {
+  padding-bottom: 50px;
+}
+
+.skill__section--heading {
+  padding: 50px 0px;
+}
+.skill__icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill__icon--item {
+  flex: 20%;
+  margin: 20px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.skill__icon--item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skill__icon--item img {
+  width: 70px;
+  height: 65px;
+}
+
+/* Work info section */
+.work__info--section {
+  padding: 50px 0px;
+  text-align: center;
+}
+.work__info--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.work__info--text {
+  flex-basis: 48%;
+  margin: 20px 0px;
+}
+
+.line {
+  width: 2px;
+  height: 50px;
+  background: #cccccc;
+  display: inline-block;
+  margin: 0px 10px;
+  display: none;
+}
+/* Project Section Area */
+
+.project__section {
+  padding: 50px 0px;
+}
+.project__list--card {
+  width: 375px;
+  background: #1f2937;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+.project__list--details {
+  padding: 30px;
+}
+.project__list--details h2 {
+  font-weight: 500;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.tech__stack {
+  margin: 15px 0px;
+  font-size: 14px;
+}
+.project__preview--link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project__preview--link a:hover {
+  color: #01eefe;
+}
+/* client_ testimonial */
+.client__testimonial {
+  padding: 40px 20px;
+}
+.client__section--heading {
+  margin-top: 20px;
+}
+.client__reviews--card {
+  background: #030712;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px 0px;
+}
+
+/* Contact Section */
+.contact__us {
+  padding: 50px 20px;
+}
+.contact__us--form input,
+textarea {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #1f2937;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+textarea {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type='submit'] {
+  background: #01eefe;
+  outline: none;
+  border: none;
+  color: #191919;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px #01eefe;
+  font-size: 18px;
+}
+
+/* footer section */
+.footer__section {
+  padding: 20px;
+}
+.footer__cradit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer--social-link i {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Responsive section   */
+@media only screen and (min-width: 768px) {
+  .header_section {
+    padding-top:20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav ul li a:hover {
+    color: #01eefe;
+    transition: 0.3s ease;
+  }
+  /* About Section */
+  .about__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 600px;
+  }
+  .about__section--text {
+    order: 1;
+    flex: 1;
+    text-align: left;
+  }
+  .about__section--image {
+    order: 2;
+    flex: 1;
+    margin-bottom: 10px;
+  }
+  .about__section--image img {
+    width: 70%;
+  }
+  .about__section--social-link {
+    justify-content: start;
+  }
+  .experience__section--card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+  .experience__duration {
+    order: 3;
+  }
+  .experience__section--container {
+    padding: 20px 100px;
+  }
+  .experience__section--card {
+    margin-bottom: 30px;
+  }
+  .work__info--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .work__info--text {
+    flex-basis: 0;
+    margin: 0;
+    display: flex;
+  }
+  .line {
+    display: block;
+  }
+
+  .project__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .project__list--card {
+    margin-bottom: 0px;
+    flex-basis: 37%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header__menu {
+    display: block;
+  }
+  .header__left--menuicon {
+    display: none;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .project__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .project__list--card {
+    margin-bottom: 0px;
+    flex-basis: 30%;
+    margin-bottom: 0px;
+  }
+  .client__reviews--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .client__testimonial--list > * {
+    flex: 1;
+  }
+  .client__reviews--card {
+    flex-basis: 48%;
+  }
+  .ctonact__us {
+    padding: 30px 200px;
+  }
+  .contact__us--form {
+    padding: 30px 100px;
+  }
+}
